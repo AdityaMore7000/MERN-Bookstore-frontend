@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom';
 import { MdOutlineAddBox } from 'react-icons/md';
 import BooksTable from '../components/home/BooksTable';
 import BooksCard from '../components/home/BooksCard';
-import dotenv from 'dotenv'
-dotenv.config();
 
 const Home = () => {
   const [books, setBooks] = useState([]);
@@ -25,6 +23,7 @@ const Home = () => {
         console.log(error);
         setLoading(false);
       });
+      console.log(import.meta.env.VITE_SECRET)
   }, []);
 
   return (

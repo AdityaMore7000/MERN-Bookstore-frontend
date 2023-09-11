@@ -4,8 +4,6 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import BackButton from '../components/BackButton';
 import Spinner from '../components/Spinner';
-import dotenv from 'dotenv'
-dotenv.config();
 
 const ShowBook = () => {
   const [book, setBook] = useState({});
